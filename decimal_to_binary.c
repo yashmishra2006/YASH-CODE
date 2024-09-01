@@ -31,4 +31,3 @@ int main(void)
     scanf("%d", &deci);
     decitobin(deci);
 }
-2
