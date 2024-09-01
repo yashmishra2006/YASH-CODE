@@ -1,3 +1,7 @@
+    /* Name: YASH MISHRA
+
+    Find the value of sin x using taylors series*/
+    
     #include <stdio.h>
     #define pie 3.14159265358979323
     #define sign(x) ((x)>0)? 1:-1
@@ -25,7 +29,7 @@
 
         x_sq = x * x;
         t = x;  // Initial term of the series
-        prev = -(t * 2);  // Initialize prev_t with a value greater than t
+        prev = -(t * 2);  // Initialize prev with a value greater than t
 
         // Compute sine using Taylor series
         while ((-(prev / t)) >= 1e-6)

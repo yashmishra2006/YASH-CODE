@@ -1,11 +1,11 @@
 #include <stdio.h>
 
 
-int decitobin(number)
+int decitobin(int number)
 {
     int i =0;
     int lst[32];
-    int quo = 0;
+    int quo;
     while(quo>0)
     {
         quo = number/2;
