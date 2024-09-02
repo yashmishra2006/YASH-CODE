@@ -1,6 +1,6 @@
-    /* Name: YASH MISHRA
+/* Name: YASH MISHRA
 
-    Find the value of sin x using taylors series*/
+Find the value of sin x using taylors series*/
 
 #include <stdio.h>
 #define pie 3.14159265358979323
