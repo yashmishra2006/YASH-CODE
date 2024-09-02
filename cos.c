@@ -21,7 +21,7 @@
         while (x > pie)
             x -= 2 * pie;
         while (x < -pie)
-            x += 2 * PI;
+            x += 2 * pie;
 
         x_sq = x * x;
         t = 1;  // Initial term of the series
