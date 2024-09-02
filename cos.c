@@ -16,16 +16,12 @@
         scanf("%f", &y);
 
         x = y;
-        float pi_bytwo = pie/2;
 
         // Normalize angle to period of cos
-        while (x >= pi_bytwo) {
-            x -= pi_bytwo;
-        }
-
-        while (x < - pi_bytwo) {
-            x += pi_bytwo;
-        }
+        while (x > pie)
+            x -= 2 * pie;
+        while (x < -pie)
+            x += 2 * PI;
 
         x_sq = x * x;
         t = 1;  // Initial term of the series
