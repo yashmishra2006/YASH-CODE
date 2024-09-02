@@ -28,7 +28,7 @@
         prev = -t;  // Initialize prev term
 
         // Compute cosine using Taylor series
-        while ((-(prev / t)) >= 1e-6)
+        while ((-(prev / t)) >= 1e-8)
         {
             s += t;
             prev = t;  // Update previous term
