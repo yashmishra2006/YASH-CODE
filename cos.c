@@ -16,15 +16,15 @@
         scanf("%f", &y);
 
         x = y;
-        float two_pi = 2 * pie;
+        float pi_bytwo = pie/2;
 
-        // Normalize angle to period of sin
-        while (x >= two_pi) {
-            x -= two_pi;
+        // Normalize angle to period of cos
+        while (x >= pi_bytwo) {
+            x -= pi_bytwo;
         }
 
-        while (x < 0) {
-            x += two_pi;
+        while (x < - pi_bytwo) {
+            x += pi_bytwo;
         }
 
         x_sq = x * x;
