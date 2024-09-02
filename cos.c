@@ -33,7 +33,7 @@ int main(void)
     t = 1;  // Initial term of the series
     prev = -(t * 2);  // Initialize prev with a value greater than t for ratio calculation
 
-    // Compute sine using Taylor series
+    // Compute cosine using Taylor series
     while ((-(prev / t)) >= 1e-6)
     {
         s += t;
