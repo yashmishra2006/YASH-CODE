@@ -28,7 +28,7 @@
         prev = -t;  // Initialize prev term
 
         // Compute cosine using Taylor series
-        while ((-(prev / t)) >= 1e-8)
+        while ((-(prev / t)) >= 1e-6)
         {
             s += t;
             prev = t;  // Update previous term
@@ -39,5 +39,5 @@
         s += t; // Add the last term
 
         // Output the result
-        printf("cos(%lf) = %lf\n", y, s);
+        printf("cos(%f) = %1.6f\n", y, s);
     }
