@@ -8,7 +8,7 @@
 
     int main(void)
     {
-        float x, y, x_sq, s = 0.0, t, prev;
+        long float x, y, x_sq, s = 0.0, t, prev;
         int i = 0;
 
         // Input value in radians
@@ -39,5 +39,5 @@
         s += t; // Add the last term
 
         // Output the result
-        printf("cos(%f) = %f\n", y, s);
+        printf("cos(%lf) = %lf\n", y, s);
     }
