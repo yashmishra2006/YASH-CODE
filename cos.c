@@ -8,7 +8,7 @@
 
     int main(void)
     {
-        long float x, y, x_sq, s = 0.0, t, prev;
+        long x, y, x_sq, s = 0.0, t, prev;
         int i = 0;
 
         // Input value in radians
