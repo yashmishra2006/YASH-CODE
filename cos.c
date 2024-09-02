@@ -25,7 +25,7 @@
 
         x_sq = x * x;
         t = 1;  // Initial term of the series
-        prev = t;  // Initialize prev term
+        prev = -t;  // Initialize prev term
 
         // Compute cosine using Taylor series
         while ((-(prev / t)) >= 1e-6)
