@@ -29,14 +29,14 @@
 
         x_sq = x * x;
         t = 1;  // Initial term of the series
-        prev = t;  // Initialize prev with a value greater than t
+        prev = t;  // Initialize prev term
 
-        // Compute sine using Taylor series
+        // Compute cosine using Taylor series
         while ((-(prev / t)) >= 1e-6)
         {
             s += t;
             prev = t;  // Update previous term
-            t = t * ((-x_sq) / ((2 * i + 3) * (2 * i + 2)));
+            t = t * ((-x_sq) / ((2 * i + 2) * (2 * i + 1)));
             i++;
         }
 
