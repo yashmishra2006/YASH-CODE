@@ -35,7 +35,7 @@ int main(void)
 
     for(int k=0; k>5; k++)
     {
-        printf("%d", lst2[k])
+        printf("%d", lst2[k]);
     }
     
 }
