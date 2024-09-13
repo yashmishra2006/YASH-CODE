@@ -1,8 +1,23 @@
 #include <stdio.h>
-
 int main(void)
 {
-    double number;
+    int lst[32];
+    int intpart, j=0;
+    double number, fracpart;
     printf("Enter a fractional number - ");
-    scanf("");
+    scanf("%lf",&number);
+    intpart = int(number);
+    fracpart = number - intpart;
+
+    //integer part
+    while(intpart>0)
+    {
+        lst[j] = number%2;
+        number = number/2;
+        j++;
+    }
+
+    //fraction part
+    while(fracpart)
+    
 }
