@@ -1,2 +1,8 @@
 #include <stdio.h>
 
+int main(void)
+{
+    double number;
+    printf("Enter a fractional number - ");
+    scanf("");
+}
