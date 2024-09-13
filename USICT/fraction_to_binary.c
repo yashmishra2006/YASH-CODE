@@ -13,8 +13,8 @@ int main(void)
     //integer part
     while(intpart>0)
     {
-        lst[j] = number%2;
-        number = number/2;
+        lst[j] = intpart%2;
+        intpart = intpart/2;
         j++;
     }
 
