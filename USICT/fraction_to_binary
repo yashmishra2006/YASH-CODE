@@ -23,7 +23,19 @@ int main(void)
     {
         fracnew = fracpart * 2;
         lst2[i] = int(fracnew);
-        fracpart = (fracnew) - int(fracnew) 
+        fracpart = (fracnew) - int(fracnew);
+    }
+
+    for(int l = j-1; l>=0; l--)
+    {
+        printf("%d",lst[l]);
+    }
+
+    printf(".");
+
+    for(int k=0; k>5; k++)
+    {
+        printf("%d", lst2[k])
     }
     
 }
