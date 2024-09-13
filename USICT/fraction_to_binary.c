@@ -24,6 +24,7 @@ int main(void)
         fracnew = fracpart * 2;
         lst2[i] = (int) fracnew;
         fracpart = (fracnew) - (int)fracnew;
+        print("%lf")
         i ++;
     }
 
