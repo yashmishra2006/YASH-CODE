@@ -7,7 +7,7 @@ int main(void)
     double number, fracpart, fracnew;
     printf("Enter a fractional number - ");
     scanf("%lf",&number);
-    intpart = int(number);
+    intpart = (int) number;
     fracpart = number - intpart;
 
     //integer part
@@ -22,8 +22,8 @@ int main(void)
     while(fracpart>0)
     {
         fracnew = fracpart * 2;
-        lst2[i] = int(fracnew);
-        fracpart = (fracnew) - int(fracnew);
+        lst2[i] = (int) fracnew;
+        fracpart = (fracnew) - (int)fracnew;
     }
 
     for(int l = j-1; l>=0; l--)
