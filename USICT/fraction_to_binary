@@ -18,6 +18,9 @@ int main(void)
     }
 
     //fraction part
-    while(fracpart)
+    while(fracpart>0)
+    {
+        
+    }
     
 }
