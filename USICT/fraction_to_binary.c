@@ -10,14 +10,14 @@ int main(void)
     intpart = (int) number;
     fracpart = number - intpart;
 
-    //integer part
+  /*  //integer part
     while(intpart>0)
     {
         lst[j] = intpart%2;
         intpart = intpart/2;
         j++;
     }
-
+*/
     //fraction part
     while(fracpart>0)
     {
@@ -26,13 +26,13 @@ int main(void)
         fracpart = (fracnew) - (int)fracnew;
         i ++;
     }
-
+/*
     for(int l = j-1; l>=0; l--)
     {
         printf("%d",lst[l]);
     }
 
-    printf(".");
+    printf("."); */
 
     for(int k=0; k>5; k++)
     {
