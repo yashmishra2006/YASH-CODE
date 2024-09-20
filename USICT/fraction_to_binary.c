@@ -27,7 +27,7 @@ int main(void)
         i ++;
     }
 /*
-    for(int l = j-1; l>=0; l--)
+    for(int l = j-1; l>=0; l--) 
     {
         printf("%d",lst[l]);
     }
