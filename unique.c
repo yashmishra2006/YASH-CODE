@@ -1,9 +1,9 @@
     #include <stdio.h>
 
     int main(void){
-    int num[3] = {7,4,5};
+    int num[4] = {0,7,4,5};
     int unique[3] = {0,0,0};
-    int count = 0;
+    int count = 1;
 
     for(int i=0; i<3; i++)
     {
@@ -15,7 +15,7 @@
             }
         }
 
-        unique[count+1] = i;    
+        unique[count] = i;    
         count++;
     }
     for(int i=0; i<3; i++)
