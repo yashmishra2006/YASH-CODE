@@ -10,7 +10,7 @@
     {
         for(int j=0; j<count; j++)
         {
-            if(unique[j] == i)
+            if(unique[j] == num[i])
             {
                 break;
             }
