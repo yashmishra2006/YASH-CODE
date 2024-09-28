@@ -5,7 +5,7 @@
     int unique[3] = {0,0,0};
     int count = 1;
     num[0] = 5;
-/**/
+
     for(int i=0; i<3; i++)
     {
         for(int j=0; j<count; j++)
