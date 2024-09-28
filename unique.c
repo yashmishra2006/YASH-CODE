@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 int main(void){
-int num[3] = {1,1,2};
+int num[3] = {3,4,5};
 int unique[3] = {0,0,0};
 int count = 0;
 
@@ -20,7 +20,7 @@ for(int i=0; i<3; i++)
 }
 for(int i=0; i<3; i++)
 {
-    printf("%d\n", unique[i]);
+    //printf("%d\n", unique[i]);
     printf("%d\n", num[i]);
 }
 }
