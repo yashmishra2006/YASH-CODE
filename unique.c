@@ -5,7 +5,7 @@ int num[3] = {1,1,2};
 int unique[3];
 int count = 0;
 
-for(int i=0; i<N; i++)
+for(int i=0; i<3; i++)
 {
     for(int j=0; j<count; j++)
     {
@@ -16,9 +16,9 @@ for(int i=0; i<N; i++)
     }
 
     unique[count+1] = i;    
-    count++
+    count++;
 }
-for(int i=0; i<count)
+for(int i=0; i<count; i++)
 {
     printf("%d\n", unique[i]);
 }
