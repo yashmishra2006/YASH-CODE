@@ -1,11 +1,11 @@
     #include <stdio.h>
 
     int main(void){
-    int num[3] = {1,1,1};
+    int num[3] = {0};
     int unique[3] = {0,0,0};
     int count = 1;
     num[0] = 5;
-
+/**/
     for(int i=0; i<3; i++)
     {
         for(int j=0; j<count; j++)
