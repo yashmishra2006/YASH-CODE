@@ -22,7 +22,10 @@ int removeDuplicates(int arr[], int n) {
             j++;
         }
     }
-    
+for(int i=0; i<j; i++)
+{
+    printf("%d,", temp[i]);
+}
 printf("%d\n", j);
 
 }
