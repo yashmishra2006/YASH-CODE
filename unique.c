@@ -23,7 +23,7 @@ int removeDuplicates(int arr[], int n) {
         }
     }
     
-printf("%d\n", j-1);
+printf("%d\n", j);
 
 }
 
