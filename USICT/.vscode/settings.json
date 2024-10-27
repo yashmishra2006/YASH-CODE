@@ -1,9 +1,4 @@
 {
-  "C_Cpp.errorSquiggles": "disabled",
-  "C_Cpp.default.compilerPath": "C:\\MinGW\\bin\\gcc.exe",
-  "C_Cpp.intelliSenseEngineFallback": "enabled",
-  "gitdoc.enabled": true,
-  "git.ignoreLimitWarning": true,
   "C_Cpp_Runner.cCompilerPath": "gcc",
   "C_Cpp_Runner.cppCompilerPath": "g++",
   "C_Cpp_Runner.debuggerPath": "gdb",
