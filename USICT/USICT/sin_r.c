@@ -7,12 +7,12 @@
 
     int main(void)
     {
-        double x, y, z, x_sq, s = 0.0, t, prev;
+        float x, y, z, x_sq, s = 0.0, t, prev;
         int i = 0;
 
         // Input value in radians
         printf("Enter value in radians - ");
-        scanf("%lf", &y);
+        scanf("%f", &y);
 
         x = y;
         float half_pi = pie / 2;
@@ -51,7 +51,7 @@
         s = -s;}
 
         // Output the result
-        printf("sin(%f) = %lf\n", y, s);
+        printf("sin(%f) = %.15f\n", y, s);
 
         return 0;
     }
