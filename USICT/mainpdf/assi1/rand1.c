@@ -1,6 +1,7 @@
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
+#include <stddef.h>
 #include "task001.h"  // Include the task001.h
 #include "aux001.h"   // Include the auxiliary functions for timing
 
