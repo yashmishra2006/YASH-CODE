@@ -1,6 +1,5 @@
 #include <stdio.h>
-#include <string.h>
-#include <math.h>
+#include <limits.h> // Include for INT_MAX and INT_MIN
 
 // Q1: Count the number of digits in a positive integer
 int count_digits(int number) {
@@ -35,8 +34,15 @@ int convert_to_integer(int digits[], int N) {
 int reverse_integer(int number) {
     int reversed = 0;
     while (number != 0) {
-        reversed = reversed * 10 + number % 10;
-        number /= 10;
+        int digit = number % 10; // Get the last digit
+        number /= 10; // Remove the last digit
+
+        // Check for overflow before reversing
+        if (reversed > (INT_MAX - digit) / 10) {
+            printf("Overflow occurred while reversing.\n");
+            return 0; // Handle overflow, return 0 or any error code
+        }
+        reversed = reversed * 10 + digit; // Build the reversed number
     }
     return reversed;
 }
