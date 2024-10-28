@@ -1,6 +1,6 @@
 #include <sys/time.h> // For gettimeofday on Unix
 #include <time.h>
-
+#include <windows.h>
 double currWallTime() {
     struct timeval tv;
     gettimeofday(&tv, NULL);
