@@ -35,7 +35,6 @@
 
         x_sq = x * x;
         t = x;  // Initial term of the series
-        printf("%f\n", t);
         prev = -(t * 2);  // Initialize prev with a value greater than t
 
         // Compute sine using Taylor series with ratio check
