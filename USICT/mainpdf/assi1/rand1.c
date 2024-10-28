@@ -39,14 +39,30 @@ void timeSwapFunctions(size_t originalSize, char dataType) {
     if (dataType == 'i') {
         arr1_int = (int *)malloc(size * sizeof(int));
         arr2_int = (int *)malloc(size * sizeof(int));
+        if (!arr1_int || !arr2_int) {
+            fprintf(stderr, "Memory allocation failed for int arrays.\n");
+            return; // Exit the function if memory allocation fails
+        }
         initializeIntArrays(arr1_int, arr2_int, size);
     } else if (dataType == 'f') {
         arr1_float = (float *)malloc(size * sizeof(float));
         arr2_float = (float *)malloc(size * sizeof(float));
+        if (!arr1_float || !arr2_float) {
+            fprintf(stderr, "Memory allocation failed for float arrays.\n");
+            free(arr1_float);
+            free(arr2_float);
+            return; // Exit the function if memory allocation fails
+        }
         initializeFloatArrays(arr1_float, arr2_float, size);
     } else if (dataType == 'c') {
         arr1_char = (char *)malloc(size * sizeof(char));
         arr2_char = (char *)malloc(size * sizeof(char));
+        if (!arr1_char || !arr2_char) {
+            fprintf(stderr, "Memory allocation failed for char arrays.\n");
+            free(arr1_char);
+            free(arr2_char);
+            return; // Exit the function if memory allocation fails
+        }
         initializeCharArrays(arr1_char, arr2_char, size);
     } else {
         fprintf(stderr, "Invalid data type specified.\n");
@@ -93,7 +109,7 @@ void timeSwapFunctions(size_t originalSize, char dataType) {
     double timeSwapN = dblTimeDiff(end, start);
 
     // Print results
-    printf("Original array size: %lu\n", (unsigned long)originalSize);
+    printf("Original array size: %zu\n", originalSize);
     printf("Time taken by SwapT: %f seconds\n", timeSwapT);
     printf("Time taken by SwapN: %f seconds\n", timeSwapN);
 
@@ -112,7 +128,7 @@ int main() {
 
     // Prompt the user for the array size
     printf("Enter the size of the arrays: ");
-    scanf("%lu", (unsigned long *)&size); // Read size_t input using %lu
+    scanf("%zu", &size); // Use %zu for size_t
 
     // Validate the input size
     if (size == 0) {
