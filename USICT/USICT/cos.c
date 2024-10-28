@@ -12,7 +12,7 @@
         int i = 0;
 
         // Input value in radians
-        printf("Enter value in radians - ");
+        printf("    Enter value in radians - ");
         scanf("%f", &y);
 
         x = y;
