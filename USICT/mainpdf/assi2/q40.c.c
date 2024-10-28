@@ -34,5 +34,6 @@ int calculate_sum(int n) {
             s -= term;  // Subtract if i is odd
         }
     }
+    printf("The sum is %d", s);
     return s;  // Return the computed sum
 }
