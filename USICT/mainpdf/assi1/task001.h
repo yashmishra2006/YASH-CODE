@@ -1,3 +1,4 @@
+#include <stdio.h>
 #ifndef TASK001_H
 #define TASK001_H
 

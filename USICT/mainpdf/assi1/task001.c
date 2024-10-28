@@ -1,4 +1,5 @@
 #include "task001.h"
+#include <stdio.h>
 
 // Function to swap integers
 void SwapTint(int *a, int *b) {
