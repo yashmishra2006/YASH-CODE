@@ -38,7 +38,7 @@
         prev = -(t * 2);  // Initialize prev with a value greater than t
 
         // Compute sine using Taylor series with ratio check
-        while ((-(prev / t)) >= 1e-6)
+        while ((-(prev / t)) >= 1e-15)
         {
             s += t;
             prev = t;  // Update previous term
