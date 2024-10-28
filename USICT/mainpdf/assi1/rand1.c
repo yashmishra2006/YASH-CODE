@@ -72,7 +72,7 @@ int main() {
     // Seed the random number generator
     srand((unsigned int)time(NULL));
 
-    size_t sizes[] = {1000, 10000, 100000, 1000000, 10000000, 100000000, 1000000000, 100000000000}; // Different array sizes
+    long long sizes[] = {1000, 10000, 100000, 1000000, 10000000, 100000000, 1000000000, 100000000000}; // Different array sizes
 
     for (size_t i = 0; i < sizeof(sizes) / sizeof(sizes[0]); i++) {
         printf("Running tests for size: %zu\n", sizes[i]);
