@@ -98,7 +98,9 @@ int main() {
 
     // Q2: Sum of digits
     printf("Sum of digits: %d\n", sum_digits(number));
-
+ // Q4: Reverse the integer
+    printf("Reversed integer: %d\n", reverse_integer(number));
+    
     // Q3: Convert set of single digits to an integer
     printf("Enter the number of digits for conversion: ");
     scanf("%d", &N);
@@ -108,8 +110,6 @@ int main() {
     }
     printf("Converted integer: %d\n", convert_to_integer(digits, N));
 
-    // Q4: Reverse the integer
-    printf("Reversed integer: %d\n", reverse_integer(number));
 
     // Q5: Convert string representation to integer
     printf("Enter a positive or negative integer as a string: ");
