@@ -51,6 +51,7 @@ void timeSwapFunctions(size_t size) {
     start = currCpuTime();
     SwapNfloat(arr1_float, arr2_float, size);
     end = currCpuTime();
+    printf("Time taken by swapT ")
     printf("Time taken by SwapNfloat for size %zu: %f seconds\n", size, dblTimeDiff(end, start));
 
     // Timing for SwapNchar
