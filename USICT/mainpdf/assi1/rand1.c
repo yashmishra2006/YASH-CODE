@@ -59,7 +59,7 @@ void timeSwapFunctions(size_t size) {
     SwapNchar(arr1_char, arr2_char, size);
     end = currCpuTime();
     printf("Time taken by SwapNchar for size %zu: %f seconds\n", size, dblTimeDiff(end, start));
-
+    printf("The current cpu time is", end-start);
     // Free allocated memory
     free(arr1_int);
     free(arr2_int);
