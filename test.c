@@ -39,6 +39,42 @@ int attack(int attacker, int defender, int attack_type) {
     return defender;
 }
 
+// Function to display the status and allow Player 1 to choose their attack
+int player1_attack_choice() {
+    int choice;
+    printf("Player 1, choose your attack:\n");
+    printf("1. Stone Ball (Strong)\n");
+    printf("2. Water Ball (Weak)\n");
+    printf("Enter choice (1 or 2): ");
+    scanf("%d", &choice);
+    
+    // Validate input
+    while (choice != 1 && choice != 2) {
+        printf("Invalid choice. Please enter 1 for Stone Ball or 2 for Water Ball: ");
+        scanf("%d", &choice);
+    }
+    
+    return choice;
+}
+
+// Function to display the status and allow Player 2 to choose their attack
+int player2_attack_choice() {
+    int choice;
+    printf("Player 2, choose your attack:\n");
+    printf("1. Fire Arrow (Strong)\n");
+    printf("2. Ice Arrow (Weak)\n");
+    printf("Enter choice (1 or 2): ");
+    scanf("%d", &choice);
+    
+    // Validate input
+    while (choice != 1 && choice != 2) {
+        printf("Invalid choice. Please enter 1 for Fire Arrow or 2 for Ice Arrow: ");
+        scanf("%d", &choice);
+    }
+    
+    return choice;
+}
+
 // Function to play the game
 void play_game() {
     int player1_hp = MAX_HP;
@@ -50,13 +86,13 @@ void play_game() {
     while (player1_hp > 0 && player2_hp > 0) {
         if (turn == 1) {  // Player 1's turn (Ball Thrower)
             printf("\nPlayer 1's turn (Ball Thrower):\n");
-            int attack_type = rand() % 2 + 1;  // Randomly choose Stone or Water Ball
+            int attack_type = player1_attack_choice();  // Player 1 chooses attack
             player2_hp = attack(1, player2_hp, attack_type);  // Attack Player 2
             printf("Player 2 HP: %d\n", player2_hp);
             turn = 2;  // Switch turn
         } else {  // Player 2's turn (Arrow Thrower)
             printf("\nPlayer 2's turn (Arrow Thrower):\n");
-            int attack_type = rand() % 2 + 1;  // Randomly choose Ice or Fire Arrow
+            int attack_type = player2_attack_choice();  // Player 2 chooses attack
             player1_hp = attack(2, player1_hp, attack_type);  // Attack Player 1
             printf("Player 1 HP: %d\n", player1_hp);
             turn = 1;  // Switch turn
