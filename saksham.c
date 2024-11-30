@@ -25,7 +25,7 @@ int main() {
     list[arr[0]-32]++;
 
     for(int i=1; i<95; i++){
-        printf("%c : %i\n ", i+32, list[i]);
+        printf("%c : %i\n ", i+31, list[i]);
         if(list[i]>1){
             logic = true;
         }
