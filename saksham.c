@@ -23,7 +23,7 @@ int main() {
     }
 
     for(int i=0; i<95; i++){
-        printf("%c, ", list[i]);
+        printf("%i, ", list[i]);
         if(arr[i]>1){
             logic = true;
             break;
