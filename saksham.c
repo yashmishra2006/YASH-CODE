@@ -8,7 +8,7 @@ int main() {
     scanf("%d", &n);
 
     char arr[n];
-    int list[95];
+    int list[95] ={0};
     bool logic;
 
     printf("Enter %d elements:\n", n);
@@ -25,10 +25,9 @@ int main() {
     list[arr[0]-32]++;
 
     for(int i=1; i<95; i++){
-        printf("%c : %i, ", i+32, list[i]);
+        printf("%c : %i\n ", i+32, list[i]);
         if(list[i]>1){
             logic = true;
-            break;
         }
     }
 
