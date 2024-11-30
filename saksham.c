@@ -5,6 +5,7 @@ int main() {
     scanf("%d", &n);
 
     char arr[n];
+    bool list[95];
 
     printf("Enter %d elements:\n", n);
     for (int i = 0; i < n; i++) {
@@ -12,7 +13,7 @@ int main() {
     }
 
     for(int i=0; i<n; i++){
-        
+
     }
 
 }
