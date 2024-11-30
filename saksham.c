@@ -6,7 +6,7 @@ int main() {
 
     char arr[n];
     int list[95];
-     logic;
+    bool logic;
 
     printf("Enter %d elements:\n", n);
     for (int i = 0; i < n; i++) {
