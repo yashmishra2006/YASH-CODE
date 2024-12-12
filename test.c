@@ -3,7 +3,7 @@
 
 int main(void){
 
-    int l,b,a;
+    int l,b,a,lt,bt;
 
     printf("Enter length");
     scanf("%i", &l);
@@ -12,5 +12,10 @@ int main(void){
     printf("Enter size of tile");
     scanf("%i", &a);
 
+    lt = ceil(l/a);
+    b = b-a;
+    bt = ceil(b/a);
     
+    printf("%i", lt*bt);
+    return 0;
 }
