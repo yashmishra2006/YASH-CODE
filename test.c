@@ -6,17 +6,17 @@ int main(void){
     float l,b,a,lt,bt;
 
     printf("Enter length");
-    scanf("%i", &l);
+    scanf("%f", &l);
     printf("Enter breadth");
-    scanf("%i", &b);
+    scanf("%f", &b);
     printf("Enter size of tile");
-    scanf("%i", &a);
+    scanf("%f", &a);
 
     lt = ceil(l/a);
     b = b-a;
     bt = ceil(b/a);
-    printf("%i", lt);
-    printf("%i", bt);
-    printf("%i", lt*bt);
+    printf("%f", lt);
+    printf("%f", bt);
+    printf("%f", lt*bt);
     return 0;
 }
