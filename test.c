@@ -15,7 +15,8 @@ int main(void){
     lt = ceil(l/a);
     b = b-a;
     bt = ceil(b/a);
-    
+    printf("%i", lt);
+    printf("%i", bt);
     printf("%i", lt*bt);
     return 0;
 }
