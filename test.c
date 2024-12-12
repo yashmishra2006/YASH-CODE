@@ -1,7 +1,7 @@
 #include <stdio.h>
 #include <math.h>
  
-int main(void){
+void main(void){
  
     float l,b,a;
     int lt,bt;
@@ -11,6 +11,5 @@ int main(void){
     lt = ceil(l/a);
     b = b-a;
     bt = ceil(b/a) + 1;
-    printf
-    return lt*bt;
+    printf("%i", lt*bt);
 }
