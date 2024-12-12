@@ -12,9 +12,9 @@ int main(void){
     printf("Enter size of tile");
     scanf("%f", &a);
 
-    lt = ceil(l/a);
+    lt = int(ceil(l/a));
     b = b-a;
-    bt = ceil(b/a);
+    bt = int(ceil(b/a));
     printf("%f", lt);
     printf("%f", bt);
     printf("%f", lt*bt);
