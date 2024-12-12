@@ -3,7 +3,7 @@
 
 int main(void){
 
-    int l,b,a,lt,bt;
+    float l,b,a,lt,bt;
 
     printf("Enter length");
     scanf("%i", &l);
