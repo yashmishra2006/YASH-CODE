@@ -1,4 +1,0 @@
-Enter the size of the arrays: Array size: 1000000000
-Adjusted array size: 100000000
-Time taken by SwapT (using 100000000 elements): 0.252000 seconds
-Time taken by SwapN (using 100000000 elements): 0.379000 seconds
